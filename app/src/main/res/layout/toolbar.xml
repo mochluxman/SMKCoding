@@ -8,7 +8,7 @@
     android:background="@color/colorOne"
     android:orientation="vertical">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/apa"
         android:contentDescription="@string/search"
         android:layout_width="match_parent"
@@ -84,6 +84,6 @@
             app:layout_constraintTop_toTopOf="@+id/shoping_cart" />
 
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </android.support.v7.widget.Toolbar>

@@ -1,13 +1,12 @@
 
 
 import android.os.Bundle
-import android.support.design.widget.TabLayout
-import android.support.v4.app.Fragment
-import android.support.v4.view.ViewPager
+import androidx.fragment.app.Fragment
+import androidx.viewpager.widget.ViewPager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.larapin.btmnavtab.BottomNavigation.AccountPagerAdapter
+import com.google.android.material.tabs.TabLayout
 import com.larapin.btmnavtab.BottomNavigation.StorePagerAdapter
 import com.larapin.btmnavtab.R
 

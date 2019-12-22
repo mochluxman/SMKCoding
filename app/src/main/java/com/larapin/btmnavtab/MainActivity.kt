@@ -4,10 +4,10 @@ import HomeFragment
 import RoamingFragment
 import StoreFragment
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import android.widget.FrameLayout
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager
                 .beginTransaction()
                 .setCustomAnimations(R.anim.design_bottom_sheet_slide_in, R.anim.design_bottom_sheet_slide_out)
-                .replace(R.id.content, fragment, fragment.javaClass.getSimpleName())
+                .replace(R.id.content, fragment, fragment.javaClass.simpleName)
                 .commit()
     }
 

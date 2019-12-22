@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -7,7 +7,7 @@
     android:background="@color/colorFour"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardviewBarcode"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
@@ -34,9 +34,9 @@
             android:textAlignment="center"
             android:textColor="@color/colorFour"
             android:textSize="6sp" />
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:background="@color/colorWhite"
         android:layout_marginStart="1.10dp"
         android:id="@+id/cardViewPay"
@@ -46,7 +46,7 @@
         app:layout_constraintStart_toEndOf="@+id/cardviewBarcode"
         app:layout_constraintTop_toTopOf="parent">
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardWallet"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
@@ -72,9 +72,9 @@
                 android:textAlignment="center"
                 android:textColor="@color/colorFour"
                 android:textSize="6sp" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="100dp"
             android:layout_height="45dp"
@@ -94,11 +94,11 @@
                 android:textColor="@color/colorFour"
                 android:textSize="12sp"
                 app:layout_constraintTop_toTopOf="parent" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cardViewVoucher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
         app:layout_constraintStart_toEndOf="@+id/cardViewPay"
         app:layout_constraintTop_toTopOf="parent">
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardCoupon"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
@@ -135,9 +135,9 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/colorFour"
                 android:textSize="6sp" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="100dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -156,10 +156,10 @@
                 android:textAlignment="center"
                 android:textColor="@color/colorFour"
                 android:textSize="12sp" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
