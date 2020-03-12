@@ -1,7 +1,5 @@
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
@@ -12,15 +10,37 @@ class RoamingFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_roaming, container, false)
-        val  mWebView = view?.findViewById(R.id.webView1) as WebView
-        mWebView.loadUrl("http://smkn1kepanjen.sch.id/web/")
+        //returning our layout file
+        //change R.layout.yourlayoutfilename for each of your fragments
+        val v = inflater.inflate(R.layout.fragment_roaming, container, false)
+        val mWebView = v.findViewById<View>(R.id.webView1) as WebView
+        mWebView.loadUrl("http://smkn1kepanjen.sch.id/web/blog/")
 
-        val webSettings = mWebView.getSettings()
-        webSettings.setJavaScriptEnabled(true)
+        // Enable Javascript
+        val webSettings = mWebView.settings
+        webSettings.javaScriptEnabled = true
 
         // Force links and redirects to open in the WebView instead of in a browser
-        mWebView.setWebViewClient(WebViewClient())
+        mWebView.webViewClient = WebViewClient()
+
+        mWebView.canGoBack()
+        mWebView.setOnKeyListener(View.OnKeyListener { v, keyCode, event ->
+            if (keyCode == KeyEvent.KEYCODE_BACK
+                    && event.action == MotionEvent.ACTION_UP
+                    && mWebView.canGoBack()) {
+                mWebView.goBack()
+                return@OnKeyListener true
+            }
+            false
+        })
+
+        return v
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        //you can set the title for your toolbar here for different fragments different titles
+        activity!!.title = "CodingHub.co.in"
+    }
+
 }
