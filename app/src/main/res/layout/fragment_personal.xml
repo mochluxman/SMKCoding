@@ -3,14 +3,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
-    tools:context=".BottomNavigation.PersonalFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BottomNavigation.Account.PersonalFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textAlignment="center"
-        android:text="Profil Personal" />
+        android:layout_height="match_parent">
+            <com.github.florent37.shapeofview.shapes.CircleView
+            android:id="@+id/imgProfile"
+            android:layout_width="75dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="10dp"
+            android:elevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_circle_borderColor="@color/colorFour"
+            app:shape_circle_borderWidth="2dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pria" />
+            </com.github.florent37.shapeofview.shapes.CircleView>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textAbsen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/imgProfile"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorFour"
+                android:text="23"
+                />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/textAbsen"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorFour"
+                android:text="Moch. Lukman Hakim"
+                />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textKelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/imgProfile"
+                app:layout_constraintTop_toBottomOf="@+id/textName"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorFour"
+                android:text="XII"
+                />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textJurusan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Rekayasa Perangkat Lunak"
+                android:textAlignment="center"
+                android:textColor="@color/colorFour"
+                app:layout_constraintStart_toEndOf="@id/textKelas"
+                app:layout_constraintTop_toBottomOf="@+id/textName" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textNoJurusan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/textJurusan"
+                app:layout_constraintTop_toBottomOf="@+id/textName"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorFour"
+                android:text="1"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfile"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/colorFour"
+        app:tabSelectedTextColor="@color/colorFour"
+        app:tabTextColor="@color/colorThree" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabs_acc" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

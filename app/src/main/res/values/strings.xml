@@ -17,15 +17,15 @@
 
     <!-- TODO: Tab Store-->
     <string name="product">Product</string>
-        <!-- TODO: Product Sub Menu-->
-        <string name="fooddrink"><![CDATA[Food & Drink]]></string>
-        <string name="fashion">Fashion</string>
-        <string name="book">Book</string>
-        <string name="otomotif">Otomotif</string>
-        <string name="electrik">Elektronik</string>
-        <string name="network">Network</string>
-        <string name="software">Software</string>
-        <string name="digital">Digital</string>
+    <!-- TODO: Product Sub Menu-->
+    <string name="fooddrink"><![CDATA[Food & Drink]]></string>
+    <string name="fashion">Fashion</string>
+    <string name="book">Book</string>
+    <string name="otomotif">Otomotif</string>
+    <string name="electrik">Elektronik</string>
+    <string name="network">Network</string>
+    <string name="software">Software</string>
+    <string name="digital">Digital</string>
     <!-- TODO: Digital Sub Menu-->
     <string name="smm">SMM</string>
     <string name="game">Voucher Game</string>
@@ -60,7 +60,9 @@
     <string name="absenIn">Sign In Kanesa</string>
     <string name="DateTime">Senin, 26 September 2019</string>
     <string name="Time">06.30</string>
-    <string name="signIn">Check In</string>
+
+    <string name="signIn">Sign In</string>
+    <string name="askLogin">Did you have an account ? Sign In</string>
 
 
 </resources>

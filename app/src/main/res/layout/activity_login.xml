@@ -22,9 +22,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editUsername"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_marginTop="30dp"
@@ -42,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/inputPassword"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_marginTop="10dp"
@@ -51,20 +50,19 @@
         android:background="@drawable/bg_txt_password"
         android:fontFamily="@font/montserrat_semibold"
         android:hint="@string/password"
-        android:inputType="textPassword"
-        android:paddingLeft="60dp"
+        android:paddingStart="60dp"
         android:paddingEnd="60dp"
         android:textColor="@color/colorText"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editUsername" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:paddingEnd="10dp"
@@ -76,7 +74,7 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
 
     <Button
         android:id="@+id/button"
@@ -96,7 +94,8 @@
         android:layout_marginEnd="10dp"
         android:fontFamily="@font/montserrat_semibold"
         android:paddingEnd="40dp"
-        android:text="Sign in"
+        android:paddingStart="40dp"
+        android:text="@string/signIn"
         android:textAlignment="viewEnd"
         android:textColor="@color/colorFour"
         android:textSize="14sp"
@@ -111,12 +110,14 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/montserrat_light"
-        android:text="Don't you have an account ? Sign Up"
+        android:text="@string/askLogin"
         android:textSize="12sp"
         android:textAlignment="center"
         android:textColor="@color/colorText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
