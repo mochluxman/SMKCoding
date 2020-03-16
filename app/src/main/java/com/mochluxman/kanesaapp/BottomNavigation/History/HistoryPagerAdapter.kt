@@ -25,7 +25,7 @@ class HistoryPagerAdapter(fm: FragmentManager) :FragmentPagerAdapter(fm, BEHAVIO
 
     override fun getPageTitle(position: Int): CharSequence {
         return when (position) {
-            0 -> "Aktifitas"
+            0 -> "Aktivitas"
             else -> {
                 return "Transaksi"
             }

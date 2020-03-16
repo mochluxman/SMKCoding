@@ -63,6 +63,7 @@
 
     <string name="signIn">Sign In</string>
     <string name="askLogin">Did you have an account ? Sign In</string>
+    <string name="voucherPromo">Promo and Voucher</string>
 
 
 </resources>
