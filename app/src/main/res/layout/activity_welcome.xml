@@ -7,41 +7,39 @@
     android:layout_height="match_parent"
     android:background="@color/colorOne"
     tools:context=".IntroApp.WelcomeActivity"
-    android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+    android:theme="@style/Theme.MaterialComponents.NoActionBar">
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/btn_skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="SKIP"
+        android:textColor="@color/colorFour"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:background="@android:color/transparent"
-        android:text="Lewati"
-        android:textColor="@color/colorFour" />
+        android:layout_marginTop="30dp"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
-        app:layout_constraintBottom_toTopOf="@id/layoutDots"
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorFour"
         android:gravity="center"
         app:strokeColor="@color/colorFour"
         app:strokeWidth="2dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layoutDots"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
         android:padding="10dp"
-        android:text="Get Started"
-        android:textColor="@color/colorFour"/>
+        android:text="Get Started"/>
 
     <LinearLayout
         android:id="@+id/layoutDots"

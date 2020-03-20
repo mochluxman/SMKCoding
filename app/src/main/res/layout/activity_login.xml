@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
-    tools:context=".Auth.LoginActivity">
+    tools:context=".Auth.LoginActivity"
+    android:theme="@style/Theme.MaterialComponents.NoActionBar">
 
 
     <ImageView
@@ -22,41 +23,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editUsername"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userIDTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/bg_txt_username"
-        android:fontFamily="@font/montserrat_semibold"
-        android:hint="@string/username"
-        android:paddingStart="60dp"
-        android:paddingEnd="60dp"
-        android:textColor="@color/colorText"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorFour"
+        app:hintTextColor="@color/colorFour"
+        app:helperTextTextColor="@color/colorThree"
+        app:boxStrokeColor="@color/colorFour"
 
-    <EditText
-        android:id="@+id/inputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userIDTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFour"
+            android:inputType="textEmailAddress"
+            android:hint="e-mail" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintTop_toBottomOf="@+id/userIDTextInputLayout"
+        app:passwordToggleEnabled="true"
+        app:boxStrokeColor="@color/colorFour"
+        android:textColorHint="@color/colorFour"
+        app:passwordToggleTint="@color/colorFour"
+        app:hintTextColor="@color/colorFour"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/bg_txt_password"
-        android:fontFamily="@font/montserrat_semibold"
-        android:hint="@string/password"
-        android:paddingStart="60dp"
-        android:paddingEnd="60dp"
-        android:textColor="@color/colorText"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editUsername" />
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFour"
+            android:hint="Password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView3"
@@ -74,7 +83,7 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextInputLayout" />
 
     <Button
         android:id="@+id/button"
@@ -90,6 +99,7 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="17dp"
         android:layout_marginEnd="10dp"
         android:fontFamily="@font/montserrat_semibold"

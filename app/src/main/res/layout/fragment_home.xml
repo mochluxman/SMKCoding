@@ -35,7 +35,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    app:layout_constraintEnd_toStartOf="@id/chart"
+                    app:layout_constraintEnd_toStartOf="@id/homeBarcode"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:layout_gravity="start"
@@ -65,7 +65,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>-->
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/chart"
+                    android:id="@+id/homeBarcode"
                     android:padding="2dp"
                     android:paddingStart="3dp"
                     android:layout_width="wrap_content"
@@ -75,7 +75,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
-                        android:id="@+id/shoping_cart"
+                        android:id="@+id/scanBarcode"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:contentDescription="@string/store"
