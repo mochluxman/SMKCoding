@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".BottomNavigation.Account.PersonalFragment">
+    tools:context=".bottomNavigation.Account.PersonalFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -21,10 +21,12 @@
             app:shape_circle_borderWidth="2dp">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/pria" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_account"
+                android:tint="@color/colorFour"/>
             </com.github.florent37.shapeofview.shapes.CircleView>
+
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/textAbsen"
                 android:layout_width="wrap_content"
@@ -73,7 +75,6 @@
                 app:layout_constraintStart_toEndOf="@id/textKelas"
                 app:layout_constraintTop_toBottomOf="@+id/textName" />
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/textNoJurusan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toEndOf="@id/textJurusan"

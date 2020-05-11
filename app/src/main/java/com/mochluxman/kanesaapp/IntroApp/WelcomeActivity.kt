@@ -1,5 +1,6 @@
 package com.mochluxman.kanesaapp.IntroApp
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.graphics.Color
@@ -14,6 +15,7 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.text.HtmlCompat
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.mochluxman.kanesaapp.Auth.LoginActivity
@@ -58,6 +60,7 @@ class WelcomeActivity : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("ObsoleteSdkInt")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
@@ -112,8 +115,7 @@ class WelcomeActivity : AppCompatActivity() {
         dotsLayout!!.removeAllViews()
         for (i in dots!!.indices) {
             dots!![i] = TextView(this)
-            dots!![i]?.text = Html.fromHtml("&#8226;")
-            dots!![i]?.textSize  = 35f
+            dots!![i]?.text = HtmlCompat.fromHtml("&#8226;", HtmlCompat.FROM_HTML_MODE_LEGACY)
             dots!![i]?.setTextColor(colorsInactive[currentPage])
             dotsLayout!!.addView(dots!![i])
         }
@@ -135,6 +137,7 @@ class WelcomeActivity : AppCompatActivity() {
     /**
      * Making notification bar transparent
      */
+    @SuppressLint("ObsoleteSdkInt")
     private fun changeStatusBarColor() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             val window = window

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:attrs="http://schemas.android.com/tools"
-    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/activity_main">
+    android:orientation="vertical">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBar"
@@ -31,34 +30,36 @@
             app:popupTheme="@style/AppTheme">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:background="@color/colorWhite"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite">
 
                 <EditText
                     android:id="@+id/editText4"
                     android:layout_width="225dp"
                     android:layout_height="42dp"
                     android:layout_margin="4dp"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawableTint="@color/colorTwo"
                     android:hint="@string/ask"
-                    android:textStyle="italic"
-                    android:textColorHighlight="@color/colorTwo"
-                    android:textColor="@color/colorFour"
-                    android:textColorHint="@color/colorThree"
-                    android:paddingStart="40dp"
+                    android:paddingStart="0dp"
                     android:paddingTop="2dp"
                     android:paddingBottom="4dp"
+                    android:textColor="@color/colorFour"
+                    android:textColorHighlight="@color/colorTwo"
+                    android:textColorHint="@color/colorThree"
                     android:textSize="12sp"
-                    android:background="@drawable/bg_txt_username"
+                    android:textStyle="italic"
+                    android:outlineAmbientShadowColor="@color/colorFour"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/love"
-                    android:padding="2dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="2dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/chart"
                     app:layout_constraintTop_toTopOf="parent">
@@ -77,10 +78,10 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/chart"
-                    android:padding="2dp"
-                    android:paddingStart="3dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:paddingStart="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/lonceng"
                     app:layout_constraintTop_toTopOf="parent">
@@ -99,10 +100,10 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/lonceng"
-                    android:layout_marginEnd="10dp"
-                    android:padding="2dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:padding="2dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
@@ -128,41 +129,26 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:fillViewport="true"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appBar"
-        android:fillViewport="true">
+        app:layout_constraintTop_toBottomOf="@id/appBar">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
             android:scrollbars="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/imgBanner"
-                app:cardBackgroundColor="@color/colorWhite"
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vpBannerHolder"
                 android:layout_width="match_parent"
-                android:layout_height="79dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                app:cardCornerRadius="12.5dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/pecel"/>
-
-            </androidx.cardview.widget.CardView>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <com.rd.PageIndicatorView
                 android:id="@+id/indicator"
@@ -170,15 +156,28 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginTop="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="15dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgBanner"
-                app:piv_animationType="scale"
+                app:layout_constraintTop_toBottomOf="@+id/vpBannerHolder"
+                app:piv_animationType="thinWorm"
                 app:piv_dynamicCount="true"
                 app:piv_selectedColor="@color/colorFour"
                 app:piv_unselectedColor="@color/colorThree"
-                attrs:piv_padding="12dp"
-                attrs:piv_radius="8dp" />
+                attrs:piv_padding="4dp"
+                attrs:piv_radius="4dp" />
+
+            <TextView
+                android:id="@+id/textAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.5dp"
+                android:layout_marginEnd="15dp"
+                android:padding="5dp"
+                android:text="Lihat Semua Promo"
+                android:textColor="@color/colorFour"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vpBannerHolder" />
 
             <include
                 android:id="@+id/vocpay"
@@ -186,8 +185,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="25dp"
-                android:layout_marginTop="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/indicator" />
@@ -196,13 +195,13 @@
                 android:id="@+id/tabs_str"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
                 android:background="@color/colorWhite"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/vocpay"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
                 app:tabIndicatorColor="@color/colorFour"
                 app:tabMode="fixed"
                 app:tabSelectedTextColor="@color/colorFour"
@@ -221,12 +220,12 @@
 
             <TextView
                 android:id="@+id/textTitle"
-                android:background="@color/colorWhite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
+                android:background="@color/colorWhite"
                 android:padding="5dp"
                 android:text="Official Store"
                 android:textColor="@color/colorFour"
@@ -239,9 +238,9 @@
                 android:id="@+id/scrollViewT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textTitle">
@@ -257,12 +256,12 @@
 
             <TextView
                 android:id="@+id/textTitle1"
-                android:background="@color/colorWhite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
+                android:background="@color/colorWhite"
                 android:padding="5dp"
                 android:text="Voucher &amp; Promo"
                 android:textColor="@color/colorFour"
@@ -275,9 +274,9 @@
                 android:id="@+id/comingsoon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:paddingStart="50dp"
                 android:paddingEnd="50dp"
-                android:layout_gravity="center"
                 android:src="@drawable/development"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -285,12 +284,12 @@
 
             <TextView
                 android:id="@+id/textTitle2"
-                android:background="@color/colorWhite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
+                android:background="@color/colorWhite"
                 android:padding="5dp"
                 android:text="Voucher &amp; Promo"
                 android:textColor="@color/colorFour"

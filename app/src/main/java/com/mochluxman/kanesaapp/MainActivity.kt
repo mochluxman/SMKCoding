@@ -1,19 +1,16 @@
 package com.mochluxman.kanesaapp
 
-import RoamingFragment
-import StoreFragment
-import android.content.Intent
+import com.mochluxman.kanesaapp.bottomNavigation.Roaming.RoamingFragment
+import com.mochluxman.kanesaapp.bottomNavigation.Store.StoreFragment
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.mochluxman.kanesaapp.BottomNavigation.Account.AccountFragment
-import com.mochluxman.kanesaapp.BottomNavigation.Home.HomeBarcodeActivity
-import com.mochluxman.kanesaapp.BottomNavigation.Home.HomeFragment
-import kotlinx.android.synthetic.main.activity_login.*
+import com.mochluxman.kanesaapp.bottomNavigation.Account.AccountFragment
+import com.mochluxman.kanesaapp.bottomNavigation.History.HistoryFragment
+import com.mochluxman.kanesaapp.bottomNavigation.Home.HomeFragment
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_home.*
 
 class MainActivity : AppCompatActivity() {
 

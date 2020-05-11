@@ -2,9 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.mochluxman.kanesaapp">
-
     <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,8 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true">
-        <activity android:name=".BottomNavigation.Home.HomeBarcodeActivity"></activity>
+        android:usesCleartextTraffic="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        tools:targetApi="m">
+        <activity android:name=".bottomNavigation.Home.HomeBarcodeActivity" />
         <activity android:name=".IntroApp.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,5 +26,4 @@
         <activity android:name=".Auth.LoginActivity" />
         <activity android:name=".MainActivity" />
     </application>
-
 </manifest>

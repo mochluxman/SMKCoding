@@ -4,25 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
-    tools:context=".BottomNavigation.DigitalFragment">
+    tools:context=".bottomNavigation.Store.DigitalFragment">
 
     <RelativeLayout
-        android:id="@+id/relative1"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <!--<TextView
-                android:id="@+id/text3"
-                android:layout_below="@+id/linier1"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:text="@string/Keinginan"
-                android:textColor="#000"
-                android:layout_marginStart="30sp"
-                android:textAlignment="textStart"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"/>-->
 
         <LinearLayout
             android:id="@+id/linier1"
@@ -34,7 +21,6 @@
             android:weightSum="3">
 
             <LinearLayout
-                android:id="@+id/pulsa"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -46,10 +32,9 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:src="@drawable/pulsa"/>
+                    android:src="@drawable/image_thumnail"/>
 
                 <TextView
-                    android:id="@+id/otomotif"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/pulsa"
@@ -70,10 +55,9 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:src="@drawable/walet"/>
+                    android:src="@drawable/image_thumnail"/>
 
                 <TextView
-                    android:id="@+id/electric"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
@@ -94,10 +78,9 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:src="@drawable/bill"/>
+                    android:src="@drawable/image_thumnail"/>
 
                 <TextView
-                    android:id="@+id/network"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
@@ -122,7 +105,6 @@
                 android:layout_marginBottom="5dp"/>-->
 
         <LinearLayout
-            android:id="@+id/linier2"
             android:layout_below="@id/linier1"
             android:layout_marginTop="30dp"
             android:baselineAligned="false"
@@ -132,7 +114,6 @@
             android:weightSum="3">
 
             <LinearLayout
-                android:id="@+id/smm"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -144,7 +125,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:src="@drawable/smm"/>
+                    android:src="@drawable/image_thumnail"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -167,10 +148,9 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:src="@drawable/game"/>
+                    android:src="@drawable/image_thumnail"/>
 
                 <TextView
-                    android:id="@+id/fooddrink"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
@@ -191,10 +171,9 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:src="@drawable/tickets"/>
+                    android:src="@drawable/image_thumnail"/>
 
                 <TextView
-                    android:id="@+id/fashion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"

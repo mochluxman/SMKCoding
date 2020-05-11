@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:attrs="http://schemas.android.com/tools"
     android:orientation="horizontal">
 
     <androidx.cardview.widget.CardView
@@ -19,13 +16,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/gluxent" />
-
-
+            android:background="@color/colorOne"
+            android:src="@drawable/ic_store"
+            android:tint="@color/colorFour"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -38,13 +34,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgPromo"
         app:layout_constraintTop_toTopOf="parent">
-
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/loi" />
-
-
+            android:background="@color/colorOne"
+            android:src="@drawable/ic_store"
+            android:tint="@color/colorFour"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -57,13 +52,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgPromo1"
         app:layout_constraintTop_toTopOf="parent">
-
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/risqullah" />
-
-
+            android:background="@color/colorOne"
+            android:src="@drawable/ic_store"
+            android:tint="@color/colorFour"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -76,13 +70,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgPromo2"
         app:layout_constraintTop_toTopOf="parent">
-
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/stick" />
-
-
+            android:background="@color/colorOne"
+            android:src="@drawable/ic_store"
+            android:tint="@color/colorFour"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -95,13 +88,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgPromo3"
         app:layout_constraintTop_toTopOf="parent">
-
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/kstore" />
-
-
+            android:background="@color/colorOne"
+            android:src="@drawable/ic_store"
+            android:tint="@color/colorFour"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -114,13 +106,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgPromo4"
         app:layout_constraintTop_toTopOf="parent">
-
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ggoptik" />
-
-
+            android:background="@color/colorOne"
+            android:src="@drawable/ic_store"
+            android:tint="@color/colorFour"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -133,17 +124,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgPromo5"
         app:layout_constraintTop_toTopOf="parent">
-
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/banner_tefa" />
-
-
+            android:background="@color/colorOne"
+            android:src="@drawable/ic_store"
+            android:tint="@color/colorFour"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/imgPromo7"
         android:layout_width="125dp"
         android:layout_height="83dp"
         android:layout_margin="10dp"
@@ -153,16 +142,12 @@
         app:layout_constraintStart_toEndOf="@+id/imgPromo6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.appcompat.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="..."
-            android:textColor="@color/colorFour"
-            android:textSize="20sp"
-            android:gravity="center"/>
-
-
+            android:background="@color/colorOne"
+            android:src="@drawable/ic_store"
+            android:tint="@color/colorFour"/>
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,7 +36,6 @@
         android:layout_margin="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/userNameInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorFour"
@@ -58,7 +57,6 @@
         android:layout_margin="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/userIDTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorFour"
@@ -80,14 +78,25 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/passwordTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorFour"
-            android:hint="Password" />
+            android:hint="@string/password" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/genderInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/passwordTextInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:useMaterialThemeColors="false"
+        android:checked="false"
+        android:theme="@style/CustomSwitchTheme"
+        />
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
@@ -104,7 +113,7 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordTextInputLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/genderInputLayout" />
 
     <Button
         android:id="@+id/button"

@@ -5,11 +5,10 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorWhite"
-    tools:context=".BottomNavigation.AktifitasFragment">
+    tools:context=".bottomNavigation.History.AktifitasFragment">
 
     <androidx.cardview.widget.CardView
-    android:id="@+id/cardviewMaster"
-    android:layout_margin="10dp"
+        android:layout_margin="10dp"
     android:padding="5dp"
     app:cardBackgroundColor="@color/colorWhite"
     app:cardCornerRadius="5dp"
@@ -17,7 +16,6 @@
     android:layout_height="80dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -72,11 +70,11 @@
                 app:shape_circle_borderWidth="0.25dp">
 
                 <androidx.appcompat.widget.AppCompatImageView
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/pria" />
-
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_account"
+                    android:tint="@color/colorFour"
+                    />
             </com.github.florent37.shapeofview.shapes.CircleView>
 
 
@@ -98,7 +96,8 @@
                 android:layout_height="10dp"
                 android:layout_marginTop="1dp"
                 android:layout_marginEnd="4dp"
-                android:src="@drawable/kanesa"
+                android:src="@drawable/ic_store"
+                android:tint="@color/colorFour"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imgSwap"
@@ -108,7 +107,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constrain1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="5dp"
@@ -132,7 +130,6 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/textTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="2dp"
@@ -148,7 +145,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constrain2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginEnd="10dp"
@@ -168,7 +164,6 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/infoDetail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"

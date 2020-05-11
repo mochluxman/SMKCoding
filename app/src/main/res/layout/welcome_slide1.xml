@@ -30,10 +30,9 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/version"
+        android:text="@string/beta_version"
         android:textAlignment="center"
         android:textColor="@color/colorFour"
         android:textSize="12sp"

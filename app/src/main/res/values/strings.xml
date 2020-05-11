@@ -1,69 +1,56 @@
 <resources>
     <string name="app_name">Kanesa App</string>
-    <string name="tagline">" Lantip, Limpat, Linuwih "</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello, Ini Fragment Baru !! jangan lupa ganti warna Background</string>
+    <string name="hello_fragment">Hello, Ini Fragment Baru !! jangan lupa ganti warna Background</string>
     <string name="welcome">Welcome</string>
-    <string name="version">Beta Version</string>
-    <string name="location">SMKN 1 Kepanjen</string>
-
+    <string name="beta_version">Beta Version</string>
     <!-- TODO: Boottom Navigation -->
     <string name="home">Home</string>
     <string name="roaming">Roaming</string>
     <string name="store">Store</string>
     <string name="history">History</string>
     <string name="account">Account</string>
-
     <!-- TODO: Tab Store-->
     <string name="product">Product</string>
-    <!-- TODO: Product Sub Menu-->
-    <string name="fooddrink"><![CDATA[Food & Drink]]></string>
-    <string name="fashion">Fashion</string>
-    <string name="book">Book</string>
-    <string name="otomotif">Otomotif</string>
-    <string name="electrik">Elektronik</string>
-    <string name="network">Network</string>
-    <string name="software">Software</string>
-    <string name="digital">Digital</string>
-    <!-- TODO: Digital Sub Menu-->
-    <string name="smm">SMM</string>
-    <string name="game">Voucher Game</string>
-    <string name="ticket">Ticket</string>
-    <string name="pulsa">Pulsa</string>
-    <string name="wallet">E - Money</string>
-    <string name="bill">Tagihan</string>
-
-    <!-- TODO: Service Sub Menu-->
-    <string name="programming">Programming</string>
-    <string name="networking">Networking</string>
-    <string name="Design">Design</string>
-    <string name="contents">Content Creator</string>
-
-    <!-- TODO: Input-->
-    <string name="username">Username</string>
-    <string name="password">Password</string>
-    <string name="repeat">Repeat Passsword</string>
-    <string name="forgotpass">Forgot your password ?</string>
-    <string name="ask">Dobleh, kamu mau cari apa ?</string>
-
-    <!-- TODO: Icon-->
-    <string name="search">Search</string>
-    <string name="favorite">Whistlist</string>
-    <string name="chart">Chart</string>
-    <string name="notification">Notification</string>
-    <string name="ads">Ads</string>
-    <string name="scan">scan</string>
-    <string name="kanesapay">Kanesa Pay</string>
-    <string name="voucher">Voucher</string>
     <string name="service">Service</string>
-    <string name="absenIn">Sign In Kanesa</string>
-    <string name="DateTime">Senin, 26 September 2019</string>
-    <string name="Time">06.30</string>
+    <string name="digital">Digital</string>
 
-    <string name="signIn">Sign In</string>
-    <string name="askLogin">Did you have an account ? Sign In</string>
-    <string name="voucherPromo">Promo and Voucher</string>
-
-
+    <!-- TODO: Product Sub Menu-->
+        <string name="ATK">ATK</string>
+        <string name="fooddrink"><![CDATA[Food & Drink]]></string>
+        <string name="fashion">Fashion</string>
+        <string name="otomotif">Otomotif</string>
+        <string name="electrik">Elektronik</string>
+        <string name="network">Network</string>
+        <string name="software">Software</string>
+    <!-- TODO: Digital Sub Menu-->
+        <string name="smm">SMM</string>
+        <string name="game">Voucher Game</string>
+        <string name="ticket">Ticket</string>
+        <string name="pulsa">Pulsa</string>
+        <string name="wallet">E - Money</string>
+        <string name="bill">Tagihan</string>
+    <!-- TODO: Service Sub Menu-->
+        <string name="programming">Programming</string>
+        <string name="networking">Networking</string>
+        <string name="Design">Design</string>
+        <string name="contents">Content Creator</string>
+    <!-- TODO: Input-->
+        <string name="forgotPassword">Forgot your password ?</string>
+        <string name="ask">  Dobleh, kamu mau cari apa ?</string>
+        <string name="more">Lainya</string>
+    <!-- TODO: Icon-->
+        <string name="favorite">Whistlist</string>
+        <string name="notification">Notification</string>
+        <string name="scan">scan</string>
+        <string name="kanesapay">Kanesa Pay</string>
+        <string name="voucher">Voucher</string>
+        <string name="DateTime">Senin, 26 September 2019</string>
+        <string name="Time">06.30</string>
+        <string name="signIn">Sign In</string>
+        <string name="askLogin">Did you have an account ? Sign In</string>
+        <string name="email">e-mail</string>
+        <string name="password">password</string>
+        <string name="todo">TODO</string>
 </resources>

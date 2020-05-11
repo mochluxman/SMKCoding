@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".BottomNavigation.Account.ResumeFragment"
+    tools:context=".bottomNavigation.Account.ResumeFragment"
     android:background="@color/colorWhite">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,37 +19,6 @@
             app:layout_constraintTop_toTopOf="parent"
             android:text="My Extracuricullier"
             android:textColor="@color/colorFour"/>
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imgOsis"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textExtracuriculier"
-        android:padding="5dp"
-        android:src="@drawable/osis"/>
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imgPMR"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toEndOf="@id/imgOsis"
-        app:layout_constraintTop_toBottomOf="@id/textExtracuriculier"
-        android:padding="5dp"
-        android:src="@drawable/pmr"/>
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imgPramuka"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toEndOf="@id/imgPMR"
-        app:layout_constraintTop_toBottomOf="@id/textExtracuriculier"
-        android:padding="5dp"
-        android:src="@drawable/pramuka"/>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
